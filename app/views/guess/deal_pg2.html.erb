@@ -1,0 +1,27 @@
+
+  <div class="text_container">
+    <div class="heading_container">
+      <div class="genius-img-container">
+          <%=  image_tag("dre.jpg", :alt => "Andre Sterling", :class =>"genius-img genius-img-heading") %>
+      </div>
+
+    </div>
+    <div id="title">Andre Sterling</div>
+    <p id="host">
+    <br/>
+    What Number Did Dre Choose:
+
+  </p>
+  </div>
+
+  <div id="door_container">
+    <div class="door">
+      <%= link_to image_tag("num_3.png", :alt => "Number 3", :class =>"genius-img"), "/guess_results2" %>
+    </div>
+    <div class="door">
+      <%= link_to image_tag("num_7.png", :alt => "Number 7", :class =>"genius-img"), "/guess_results1" %>
+    </div>
+    <div class="door">
+      <%= link_to image_tag("num_9.png", :alt => "Number 9", :class =>"genius-img"), "/guess_results2" %>
+    </div>
+  </div>

@@ -1,0 +1,21 @@
+
+  <div class="text_container">
+    <div id="title">Wanna Guess a Number?</div>
+    <p id="host">
+      There are 3 Geniuses. Each Genius has chosen 1 number<br>
+    If you get it right there is an AWESOME THING for you.<br>
+    If you get it wrong there are some AWFUL THING for you.<br>
+      Choose a GENIUS...</p>
+  </div>
+
+  <div id="door_container">
+    <div class="door">
+      <%= link_to image_tag("thai.jpg", :alt => "Thai Cornelius", :class =>"genius-img"), "/guess_deals1" %>
+    </div>
+    <div class="door">
+      <%= link_to image_tag("dre.jpg", :alt => "Andre Sterling", :class =>"genius-img"), "/guess_deals2" %>
+    </div>
+    <div class="door">
+      <%= link_to image_tag("quran.png", :alt => "Qur'An Smith", :class =>"genius-img"), "/guess_deals3" %>
+    </div>
+  </div>
