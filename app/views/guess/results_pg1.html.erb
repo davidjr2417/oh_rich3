@@ -1,20 +1,46 @@
 <header>
   <nav>
-    <a href="about.html">About</a>
-    <a href="mailto:jen.dewalt@gmail.com">Contact</a>
-    <a href="https://github.com/jendewalt">GitHub</a>
+    <a href="/">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="mailto:david@hiddengeniusproject.org">Contact</a>
+    <%= link_to "Github",'https://github.com/davidjr2417/oh_rich3' %>
   </nav>
 </header>
+<main>
+  <div class="text_container">
+     <div id="title">YOU LOSE!</div>
+     <p id="host">
+       Ouch! Too bad. Here is your BAD THING!
 
+     <div class="thing_container">
+       <iframe width="420" height="315" src="https://www.youtube.com/embed/J---aiyznGQ" frameborder="0" allowfullscreen></iframe>
+     </div>
 
- <div class="text_container">
-    <div id="title">YOU LOSE!</div>
-    <p id="host">
-      Ouch! Too bad. Here is your BAD THING!
-
-    <div class="thing_container">
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/J---aiyznGQ" frameborder="0" allowfullscreen></iframe>
+     <section class="back-to-main-section">
+         <%= link_to 'Wanna Try Again?', "guess" %>
+     </section>
+   </div>
+</main>
+<!-- Footer Section -->
+<footer class="social-footer">
+  <section id="lab_social_icon_footer">
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <div class="container">
+      <div class="text-center center-block">
+        <%= link_to 'https://www.facebook.com', :class =>"social-logo" do %>
+          <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'https://twitter.com', :class =>"social-logo" do %>
+          <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'https://plus.google.com/', :class =>"social-logo" do %>
+          <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'mailto:#', :class =>"social-logo" do %>
+          <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+        <% end %>
+      </div>
     </div>
-
-    <a href="make_a_deal.html">Wanna try again?</a>
-  </div>
+  </section>
+</footer>
+<!-- End Footer Section -->

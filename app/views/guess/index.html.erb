@@ -1,4 +1,15 @@
-
+<!-- Header section -->
+<header>
+  <nav>
+    <%= link_to "Home",'/' %>
+    <%= link_to "Portfolio",'/' %>
+    <a href="mailto:david@hiddengeniusproject.org">Contact</a>
+    <%= link_to "Github",'https://github.com/davidjr2417/oh_rich3' %>
+  </nav>
+</header>
+<!-- End header -->
+<!-- Main Section -->
+<main class="main-section">
   <div class="text_container">
     <div id="title">Wanna Guess a Number?</div>
     <p id="host">
@@ -19,3 +30,27 @@
       <%= link_to image_tag("quran.png", :alt => "Qur'An Smith", :class =>"genius-img"), "/guess_deals3" %>
     </div>
   </div>
+</main>
+<!-- Footer Section -->
+<footer class="social-footer">
+  <section id="lab_social_icon_footer">
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <div class="container">
+      <div class="text-center center-block">
+        <%= link_to 'https://www.facebook.com', :class =>"social-logo" do %>
+          <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'https://twitter.com', :class =>"social-logo" do %>
+          <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'https://plus.google.com/', :class =>"social-logo" do %>
+          <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'mailto:#', :class =>"social-logo" do %>
+          <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+        <% end %>
+      </div>
+    </div>
+  </section>
+</footer>
+<!-- End Footer Section -->

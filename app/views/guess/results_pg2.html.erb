@@ -1,10 +1,12 @@
 <header>
   <nav>
-    <a href="about.html">About</a>
-    <a href="mailto:jen.dewalt@gmail.com">Contact</a>
-    <a href="https://github.com/jendewalt">GitHub</a>
+    <a href="/">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="mailto:david@hiddengeniusproject.org">Contact</a>
+    <%= link_to "Github",'https://github.com/davidjr2417/oh_rich3' %>
   </nav>
 </header>
+<main>
   <div class="text_container">
     <div id="title">YOU WIN!</div>
     <p id="host">
@@ -16,6 +18,30 @@
     </div>
 
     <p id="host">
-      You just won and you want <a href="make_a_deal.html">play again?</a>
+      You just won and you want  <%= link_to 'Wanna Play Again?', "guess" %>
     </p>
   </div>
+</main>
+<!-- Footer Section -->
+<footer class="social-footer">
+  <section id="lab_social_icon_footer">
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <div class="container">
+      <div class="text-center center-block">
+        <%= link_to 'https://www.facebook.com', :class =>"social-logo" do %>
+          <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'https://twitter.com', :class =>"social-logo" do %>
+          <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'https://plus.google.com/', :class =>"social-logo" do %>
+          <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'mailto:#', :class =>"social-logo" do %>
+          <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+        <% end %>
+      </div>
+    </div>
+  </section>
+</footer>
+<!-- End Footer Section -->

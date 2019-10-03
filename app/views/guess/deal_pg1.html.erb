@@ -1,27 +1,71 @@
-
-  <div class="text_container">
-    <div class="heading_container">
-      <div class="genius-img-container">
-          <%=  image_tag("thai.jpg", :alt => "Thai Cornelius", :class =>"genius-img genius-img-heading") %>
+<!-- Header section -->
+<header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="mailto:david@hiddengeniusproject.org">Contact</a>
+    <%= link_to "Github",'https://github.com/davidjr2417/oh_rich3' %>
+  </nav>
+</header>
+<!-- End header -->
+<!-- Main Section -->
+<main class="main-section">
+  <!-- Intro Info (First) Section In Main -->
+  <section class="genius-info-section">
+    <div class="text_container">
+      <div class="heading_container">
+        <div class="genius-img-container">
+          <%= image_tag("thai.jpg", :alt => "Thai Cornelius", :class =>"genius-img genius-img-heading") %>
+        </div>
       </div>
+      <div id="title">Thai Cornelius</div>
+      <p id="host">
+        What Number Did Thai Choose:
+      </p>
+    </div>
+  </section>
+  <!-- End Of Intro Info (First) Section In Main -->
+  <!-- Card Display (Second) Section In Main -->
+  <section>
+    <div id="door_container">
+      <div class="door">
+        <%= link_to image_tag("num_3.png", :alt => "Number 3", :class =>"genius-img"), "/guess_results1" %>
+      </div>
+      <div class="door">
+        <%= link_to image_tag("num_8.png", :alt => "Number 8", :class =>"genius-img"), "/guess_results2" %>
+      </div>
+      <div class="door">
+        <%= link_to image_tag("num_10.png", :alt => "Number 10", :class =>"genius-img"), "/guess_results2" %>
+      </div>
+    </div>
+  </section>
+  <!-- End Of Card Display (Second) Section In Main -->
+  <section class="back-to-main-section">
+      <%= link_to 'Choose A Genius', "guess" %>
+  </section>
 
+</main>
+<!-- Main Section -->
+<!-- Footer Section -->
+<footer class="social-footer">
+  <section id="lab_social_icon_footer">
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <div class="container">
+      <div class="text-center center-block">
+        <%= link_to 'https://www.facebook.com', :class =>"social-logo" do %>
+          <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'https://twitter.com', :class =>"social-logo" do %>
+          <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'https://plus.google.com/', :class =>"social-logo" do %>
+          <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+        <% end %>
+        <%= link_to 'mailto:#', :class =>"social-logo" do %>
+          <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+        <% end %>
+      </div>
     </div>
-    <div id="title">Thai Cornelius</div>
-    <p id="host">
-    <br/>
-    What Number Did Thai Choose:
-
-  </p>
-  </div>
-
-  <div id="door_container">
-    <div class="door">
-      <%= link_to image_tag("num_3.png", :alt => "Number 3", :class =>"genius-img"), "/guess_results1" %>
-    </div>
-    <div class="door">
-      <%= link_to image_tag("num_8.png", :alt => "Number 8", :class =>"genius-img"), "/guess_results2" %>
-    </div>
-    <div class="door">
-      <%= link_to image_tag("num_10.png", :alt => "Number 10", :class =>"genius-img"), "/guess_results2" %>
-    </div>
-  </div>
+  </section>
+</footer>
+<!-- End Footer Section -->
