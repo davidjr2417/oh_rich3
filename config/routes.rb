@@ -2,8 +2,6 @@ Rails.application.routes.draw do
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root 'home#index'
-  get '/deals/pg1', to: 'home#deal_pg1'
-  get '/deals/pg2', to: 'home#deal_pg2'
 
   resources :guess
     get '/guess_deals1', to: 'guess#deal_pg1'
