@@ -53,8 +53,8 @@ function showGeniusName(geniusNameElement){
       //error
     }
 
-    alert(geniusNameElement.alt+" has been selected " + cnt +" times.");
-    alert(geniusNameElement.alt+" was selected!");
+    alert(geniusNameElement.alt+" was selected!\n"+geniusNameElement.alt+" has been selected " + cnt +" times.");
+
   }
 function showNumber(numberElement){
   var cnt=0;
@@ -78,8 +78,13 @@ function showNumber(numberElement){
       cnt=parseInt(cnt)+1;
       sessionStorage.setItem("NUMBERCNT6", cnt);
     }
+    else if(numberElement.alt=="Number 7"){
+      cnt=sessionStorage.getItem('NUMBERCNT7');
+      cnt=parseInt(cnt)+1;
+      sessionStorage.setItem("NUMBERCNT7", cnt);
+    }
     else if(numberElement.alt=="Number 8"){
-      cnt=sessionStorage.getItem('NUMBERCNT');
+      cnt=sessionStorage.getItem('NUMBERCNT8');
       cnt=parseInt(cnt)+1;
       sessionStorage.setItem("NUMBERCNT8", cnt);
     }
@@ -96,7 +101,6 @@ function showNumber(numberElement){
     else{
       //error
     }
-    alert();
     alert(numberElement.alt+" was selected!\n"+numberElement.alt+" has been selected " + cnt +" times.");
 
   }
