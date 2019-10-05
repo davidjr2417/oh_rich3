@@ -14,15 +14,13 @@
  *= require_self
 
  */
-// alert('a')
-var GENIUSCNT1;
-var GENIUSCNT2;
-var GENIUSCNT3;
+
 function init(){
   //Initialize Genius Count To 0
   sessionStorage.setItem("GENIUSCNT1", "0");
   sessionStorage.setItem("GENIUSCNT2", "0");
   sessionStorage.setItem("GENIUSCNT3", "0");
+
   //Initialize Number Count To 0
   sessionStorage.setItem("NUMBERCNT2", "0");
   sessionStorage.setItem("NUMBERCNT3", "0");
