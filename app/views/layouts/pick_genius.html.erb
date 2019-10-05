@@ -4,15 +4,16 @@
     <title>OhProject</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag 'index', media: 'all', 'data-turbolinks-track': 'reload' %>
-      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-      <%= javascript_include_tag "/assets/guessNumber/guess_Number" %>
-
+    <%= stylesheet_link_tag 'guessNumber/guess_Number' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "mailers", "data-turbolinks-track" => true  %>
   </head>
 
   <body>
     <%= yield %>
+
+
+
   </body>
 </html>

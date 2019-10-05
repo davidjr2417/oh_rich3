@@ -9,6 +9,10 @@ Rails.application.routes.draw do
     get '/guess_deals3', to: 'guess#deal_pg3'
     get '/guess_results1', to: 'guess#results_pg1'
     get '/guess_results2', to: 'guess#results_pg2'
+
+  resources :pick_genius
+      # get '/guess_deals1', to: 'guess#deal_pg1'
+
 # render :action => 'show'
 
 

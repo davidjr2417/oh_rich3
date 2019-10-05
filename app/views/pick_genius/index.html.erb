@@ -1,9 +1,7 @@
-
-
 <!-- Header section -->
 <header>
   <nav>
-    <%= link_to "Home", '/' %>
+    <%= link_to "Home",'/' %>
     <%= link_to "Portfolio",'/' %>
     <a href="mailto:david@hiddengeniusproject.org">Contact</a>
     <%= link_to "Github",'https://github.com/davidjr2417/oh_rich3' %>
@@ -23,13 +21,13 @@
 
   <div id="door_container">
     <div class="door">
-      <%= link_to image_tag("thai.jpg", :alt => "Thai Cornelius", :class =>"genius-img", :onclick => "showGeniusName(this)" ), "/guess_deals1" %>
+      <%= link_to image_tag("thai.jpg", :alt => "Thai Cornelius", :class =>"genius-img"), "/guess_deals1" %>
     </div>
     <div class="door">
-      <%= link_to image_tag("dre.jpg", :alt => "Andre Sterling", :class =>"genius-img", :onclick => "showGeniusName(this)"), "/guess_deals2" %>
+      <%= link_to image_tag("dre.jpg", :alt => "Andre Sterling", :class =>"genius-img"), "/guess_deals2" %>
     </div>
     <div class="door">
-      <%= link_to image_tag("quran.png", :alt => "Qur'An Smith", :class =>"genius-img", :onclick => "showGeniusName(this)"), "/guess_deals3" %>
+      <%= link_to image_tag("quran.png", :alt => "Qur'An Smith", :class =>"genius-img"), "/guess_deals3" %>
     </div>
   </div>
 </main>

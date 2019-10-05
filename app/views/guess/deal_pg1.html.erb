@@ -29,13 +29,13 @@
   <section>
     <div id="door_container">
       <div class="door">
-        <%= link_to image_tag("num_3.png", :alt => "Number 3", :class =>"genius-img"), "/guess_results1" %>
+        <%= link_to image_tag("num_3.png", :alt => "Number 3", :class =>"genius-img", :onclick => "showNumber(this)"), "/guess_results1" %>
       </div>
       <div class="door">
-        <%= link_to image_tag("num_8.png", :alt => "Number 8", :class =>"genius-img"), "/guess_results2" %>
+        <%= link_to image_tag("num_8.png", :alt => "Number 8", :class =>"genius-img", :onclick => "showNumber(this)"), "/guess_results2" %>
       </div>
       <div class="door">
-        <%= link_to image_tag("num_10.png", :alt => "Number 10", :class =>"genius-img"), "/guess_results2" %>
+        <%= link_to image_tag("num_10.png", :alt => "Number 10", :class =>"genius-img", :onclick => "showNumber(this)"), "/guess_results2" %>
       </div>
     </div>
   </section>
@@ -68,4 +68,5 @@
     </div>
   </section>
 </footer>
+
 <!-- End Footer Section -->
