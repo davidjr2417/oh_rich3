@@ -1,10 +1,10 @@
 <!-- Header section -->
 <header>
   <nav>
-    <%= link_to "Home", "/" %>
-    <%= link_to "Portfolio", "/"%>
-    <%= link_to  "Contact", "mailto:david@hiddengeniusproject.org"%>
-    <%= link_to "Github",'https://github.com/davidjr2417/oh_rich3'  %>
+    <%= link_to "Home", '/' %>
+    <%= link_to "Portfolio",'/' %>
+    <%= link_to "Contact",'mailto:david@hiddengeniusproject.org' %>
+    <%= link_to "Github",'https://github.com/davidjr2417/oh_rich3' %>
   </nav>
 </header>
 <!-- End header -->
@@ -24,7 +24,7 @@
         <div class="orange">Rich-3 OH Projects.</div>
         <div>You can follow the project here and on the
           <span>
-            <a href="#">blog</a>
+            <%= link_to 'Homepage', "/" %>
           </span>.</div>
       </div>
 
@@ -35,8 +35,8 @@
   <!-- Today's Project Section (Second) Section In Main -->
   <section class="todays-project-section">
     <div id="marquee_container">
-      <div>Today's Website</div>
-      <%= link_to 'Guess A Number', "guess" %>
+      <div><h3>Team Business Project</h3></div>
+      <%= link_to 'Creative Design', "/" %>
 
     </div>
   </section>
@@ -44,27 +44,75 @@
 
   <!-- Office Hours Projects (Third) Section -->
   <section class="office-hours-section">
-    <div id="website_list_container">
-      <div>OH 3:
-        <span>
-          <!-- <%# <%= link_to 'Make A Deal', deals_pg1_path %> %>-->
-          <%= link_to 'Pick A Genius', "pick_genius" %>
-          <!-- <a href="make_a_deal.html">Make a Deal!</a> -->
-        </span>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <h3>OH Projects</h3>
+        <div id="website_list_container">
+          <div>OH 3:
+            <span>
+              <!-- <%# <%= link_to 'Make A Deal', deals_pg1_path %> %>-->
+              <%= link_to 'Guess A Number', "guess" %>
+              <!-- <a href="make_a_deal.html">Make a Deal!</a> -->
+            </span>
+          </div>
+          <div>OH 2b:
+            <span>
+              <!-- <%# <%= link_to 'Make A Deal', deals_pg1_path %> %>-->
+              <%= link_to 'JS Basics 1B', "/js_app1_b" %>
+              <!-- <a href="make_a_deal.html">Make a Deal!</a> -->
+            </span>
+          </div>
+          <div>OH 2a:
+            <span>
+              <!-- <%# <%= link_to 'Make A Deal', deals_pg1_path %> %>-->
+              <%= link_to 'JS Basics 1A', "js_app1" %>
+              <!-- <a href="make_a_deal.html">Make a Deal!</a> -->
+            </span>
+          </div>
+          <div>OH 1:
+            <span>
+              <%= link_to 'Homepage', "/" %>
+            </span>
+          </div>
+        </div>
       </div>
-      <div>OH 2:
-        <span>
-          <!-- <%# <%= link_to 'Make A Deal', deals_pg1_path %> %>-->
-          <%= link_to 'Guess A Number', "guess" %>
-          <!-- <a href="make_a_deal.html">Make a Deal!</a> -->
-        </span>
+      <div class="col-sm-3">
+          <h3>OH Vlogs</h3>
+        <div id="website_list_container">
+
+          <div>OH 1:
+            <span>
+              <%= link_to 'Homepage', "/" %>
+            </span>
+          </div>
+        </div>
       </div>
-      <div>OH 1:
-        <span>
-          <a href="#">Homepage</a>
-        </span>
+      <div class="col-sm-3">
+          <h3>HW Projects</h3>
+        <div id="website_list_container">
+
+          <div>OH 1:
+            <span>
+              <%= link_to 'Homepage', "/" %>
+            </span>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="col-sm-3">
+          <h3>HW Vlogs</h3>
+        <div id="website_list_container">
+
+          <div>OH 1:
+            <span>
+              <%= link_to 'Homepage', "/" %>
+            </span>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
   </section>
 </main>
 <!-- End Of Main Section -->
@@ -75,22 +123,22 @@
     <div class="container">
       <div class="text-center center-block">
         <%= link_to 'https://www.facebook.com', :class =>"social-logo" do %>
-          <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
-        <% end %>
-        <%= link_to 'https://twitter.com', :class =>"social-logo" do %>
-          <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
-        <% end %>
-        <%= link_to 'https://plus.google.com/', :class =>"social-logo" do %>
-          <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
-        <% end %>
-        <%= link_to 'mailto:#', :class =>"social-logo" do %>
-          <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
-        <% end %>
-      </div>
-    </div>
-  </section>
+        <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+      <% end %>
+      <%= link_to 'https://twitter.com', :class =>"social-logo" do %>
+      <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+    <% end %>
+    <%= link_to 'https://plus.google.com/', :class =>"social-logo" do %>
+    <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+  <% end %>
+  <%= link_to 'mailto:#', :class =>"social-logo" do %>
+  <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+<% end %>
+</div>
+</div>
+</section>
 </footer>
 <!-- End Footer Section -->
 <script type="text/javascript">
-  window.onload = init();
+window.onload = init();
 </script>

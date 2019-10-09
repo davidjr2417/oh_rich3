@@ -1,0 +1,49 @@
+<!-- Header section -->
+<header>
+  <nav>
+    <%= link_to "Home", '/' %>
+    <%= link_to "Portfolio",'/' %>
+    <%= link_to "Contact",'mailto:david@hiddengeniusproject.org' %>
+    <%= link_to "Github",'https://github.com/davidjr2417/oh_rich3' %>
+  </nav>
+</header>
+<!-- End header -->
+<!-- Main Section -->
+<main class="main-section" style="margin-top:50px;" onload="init()">
+  <div class="container">
+    <div class="row" style="text-align:center; ">
+      <form class="info-form" onsubmit="event.preventDefault(); onSubmit();" >
+        <label style="font-size:30px;" for="name" >Name: </label>
+        <input style="font-size:30px;" type="text" id="name" name="name" value="" placeholder="Enter First Name">
+        <input onclick="onSubmit();"style="text-align: center;text-decoration: none; background-color: #333; color: white;display: inline-block;border:2px solid black;font-size:20px;" type="button" id="submit" name="submit" value="Submit" >
+        <input onclick="displayArr(true);"style="text-align: center;text-decoration: none; background-color: #333; color: white;display: inline-block;border:2px solid black;font-size:20px;" type="button" id="submit" name="submit" value="Show Array" >
+
+      </form>
+    </div>
+  </div>
+
+</main>
+<!-- End Of Main Section -->
+<!-- Footer Section -->
+<footer class="social-footer">
+  <section id="lab_social_icon_footer">
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <div class="container">
+      <div class="text-center center-block">
+        <%= link_to 'https://www.facebook.com', :class =>"social-logo" do %>
+        <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+      <% end %>
+      <%= link_to 'https://twitter.com', :class =>"social-logo" do %>
+      <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+    <% end %>
+    <%= link_to 'https://plus.google.com/', :class =>"social-logo" do %>
+    <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+  <% end %>
+  <%= link_to 'mailto:#', :class =>"social-logo" do %>
+  <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+<% end %>
+</div>
+</div>
+</section>
+</footer>
+<!-- End Footer Section -->

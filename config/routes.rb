@@ -11,6 +11,9 @@ Rails.application.routes.draw do
     get '/guess_results2', to: 'guess#results_pg2'
 
   resources :pick_genius
+
+  resources :js_app1
+  get '/js_app1_b', to: 'js_app1#js_app1_b'  
       # get '/guess_deals1', to: 'guess#deal_pg1'
 
 # render :action => 'show'

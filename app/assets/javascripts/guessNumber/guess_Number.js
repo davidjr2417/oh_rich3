@@ -14,10 +14,10 @@
  *= require_self
 
  */
-
+// alert('a')
 function init(){
   //Initialize Genius Count To 0
-  sessionStorage.setItem("GENIUSCNT1", "0");
+  sessionStorage.setItem("GENIUSCNT"+"1", "0");
   sessionStorage.setItem("GENIUSCNT2", "0");
   sessionStorage.setItem("GENIUSCNT3", "0");
 
@@ -105,9 +105,9 @@ function showNumber(numberElement){
 function results(resultsElement){
   var status="";
   if(resultsElement=="Lose"){
-    status="Sorry You ";
+    status="Sorry You "+resultsElement;
   }else{
-    status="Yay!!! Congrats You ";
+    status="Yay!!! Congrats You " +resultsElement;
   }
-    alert(status+resultsElement);
+    alert(status);
 }

@@ -4,10 +4,10 @@ class HomeController < ApplicationController
     @user = @user.to_h
   end
 
-  def make_a_deal
-  end
-  def deal_pg1
-  end
-  def deal_pg2
-  end
+  # def make_a_deal
+  # end
+  # def deal_pg1
+  # end
+  # def deal_pg2
+  # end
 end
